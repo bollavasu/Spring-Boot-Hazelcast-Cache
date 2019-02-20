@@ -1,0 +1,23 @@
+
+https://www.onlinetutorialspoint.com/spring-boot/spring-boot-hazelcast-cache-example.html
+
+1)execute the following queries in MYSQL
+
+  CREATE TABLE vasu.item (id INT, name VARCHAR(50), category VARCHAR(50));
+
+  INSERT INTO vasu.item (id, name, category) VALUES (1, "Pulsar", "Bike" );
+  INSERT INTO vasu.item (id, name, category) VALUES (2, "Samsung J6", "Mobile" );
+  INSERT INTO vasu.item (id, name, category) VALUES (3, "Accent", "Car" );
+  
+2)mvn clean install
+
+3)mvn spring-boot:run
+
+4)http://localhost:8080/item/1   
+
+  we will get the data in 2 or 3 sec
+  
+5)hit the same url again http://localhost:8080/item/1 
+
+  we will get the data in 0 sec 
+
